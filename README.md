@@ -107,16 +107,66 @@ While the agent is running:
 - `auto: <task>`: Give the agent a new autonomous task
 - `q`: Quit the application
 
-## 📝 Output Files
-
-The agent saves results to timestamped files:
-- `flight_result_YYYYMMDD_HHMMSS.txt`: Contains flight information and call logs
-
 ## 🎛 Configuration Options
 
 - `--mode`: Video mode (`camera`, `screen`, `none`)
 - `--task`: Specific task for autonomous operation
 - `--instructions`: Additional instructions for the AI
+- `--log-level`: Logging detail level (`DEBUG`, `INFO`, `WARNING`, `ERROR`)
+- `--log-file`: Save detailed logs to a specific file
+
+## 📝 Output Files
+
+The agent saves comprehensive information:
+- **Result Files**: `flight_result_YYYYMMDD_HHMMSS.txt` - Flight info with call statistics
+- **Log Files**: `ai_agent_log_YYYYMMDD_HHMMSS.log` - Detailed technical logs (auto-generated for tasks)
+- **Custom Logs**: Your specified filename when using `--log-file`
+
+## 📊 Comprehensive Logging
+
+The system now includes detailed logging to help you understand what's happening:
+
+### Real-time Console Logs
+- **📞 DTMF**: Shows when keys are pressed and why
+- **ℹ️ INFO**: Information being provided to the system
+- **⏳ WAIT**: When the agent is waiting for menus
+- **📊 STATUS**: Call progress updates
+- **✅ RESULT**: Flight information received
+- **❌ ERROR**: Any errors that occur
+- **🔗 SESSION**: Connection status
+- **🔊 AUDIO**: Audio system status
+
+### Interactive Commands
+While the agent is running, you can use these commands:
+
+- `status` - Show current call statistics and recent logs
+- `logs` - Display the complete call log
+- `debug` - Toggle detailed debug logging on/off
+- `help` - Show all available commands
+- `auto: <task>` - Give the agent a new autonomous task
+- `q` - Quit the application
+
+### Log Levels
+Control the amount of detail in logs:
+
+```bash
+# Basic info only
+python app.py --task "check AA1123" --log-level INFO
+
+# Detailed debugging
+python app.py --task "check AA1123" --log-level DEBUG
+
+# Save logs to file
+python app.py --task "check AA1123" --log-file my_call.log
+
+# Combine options
+python app.py --task "check AA1123" --log-level DEBUG --log-file debug_call.log
+```
+
+### Log Files
+- **Automatic**: For autonomous tasks, logs are auto-saved to timestamped files
+- **Manual**: Use `--log-file filename.log` to specify a custom log file
+- **Content**: Includes detailed function calls, timing, audio stats, and full call history
 
 ## 🚨 Important Notes
 

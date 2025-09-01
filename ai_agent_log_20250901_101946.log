@@ -1,0 +1,44 @@
+2025-09-01 10:19:46 | INFO     | __main__        | <module>             | Starting autonomous mode with task: check flight status AA1123
+2025-09-01 10:19:46 | INFO     | __main__        | <module>             | Logging to file: ai_agent_log_20250901_101946.log
+2025-09-01 10:19:46 | INFO     | __main__.AudioLoop | __init__             | Initializing AI Phone Agent...
+2025-09-01 10:19:46 | INFO     | __main__.AudioLoop | __init__             | Parsing user task: check flight status AA1123
+2025-09-01 10:19:46 | INFO     | __main__.AudioLoop | __init__             | Task parsing results:
+2025-09-01 10:19:46 | INFO     | __main__.AudioLoop | __init__             |   Task Type: flight_status
+2025-09-01 10:19:46 | INFO     | __main__.AudioLoop | __init__             |   Airline: american
+2025-09-01 10:19:46 | INFO     | __main__.AudioLoop | __init__             |   Flight Number: AA1123
+2025-09-01 10:19:46 | INFO     | __main__.AudioLoop | __init__             |   Confirmation: FLIGHT
+2025-09-01 10:19:46 | INFO     | __main__.AudioLoop | __init__             |   Target: American Airlines at 1-800-433-7300
+2025-09-01 10:19:46 | INFO     | __main__.AudioLoop | run                  | Starting AI Phone Agent session
+2025-09-01 10:19:46 | INFO     | __main__.AudioLoop | log_call_event       | SESSION: AI Phone Agent session started
+2025-09-01 10:19:46 | INFO     | __main__.AudioLoop | run                  | Connecting to Gemini Live API...
+2025-09-01 10:19:47 | INFO     | google_genai.live | connect              | b'{\n  "setupComplete": {}\n}\n'
+2025-09-01 10:19:47 | INFO     | __main__.AudioLoop | log_call_event       | SESSION: Connected to Gemini Live API
+2025-09-01 10:19:47 | INFO     | __main__.AudioLoop | run                  | Starting autonomous mode with task
+2025-09-01 10:19:47 | INFO     | __main__.AudioLoop | log_call_event       | SYSTEM: Autonomous task initiated: check flight status AA1123
+2025-09-01 10:19:47 | INFO     | __main__.AudioLoop | run                  | Starting camera feed
+2025-09-01 10:19:47 | INFO     | __main__.AudioLoop | listen_audio         | Using microphone: Microphone (HD Pro Webcam C920)
+2025-09-01 10:19:47 | INFO     | __main__.AudioLoop | log_call_event       | AUDIO: Audio input started - Microphone (HD Pro Webcam C920)
+2025-09-01 10:19:47 | INFO     | __main__.AudioLoop | log_call_event       | AUDIO: Audio output started
+2025-09-01 10:19:49 | WARNING  | google_genai.types | data                 | Warning: there are non-data parts in the response: ['executable_code'], returning concatenated data result from data parts, check out the non data parts for full response from model.
+2025-09-01 10:19:49 | WARNING  | google_genai.types | text                 | Warning: there are non-text parts in the response: ['executable_code'], returning concatenated text result from text parts, check out the non text parts for full response from model.
+2025-09-01 10:20:12 | WARNING  | google_genai.types | data                 | Warning: there are non-data parts in the response: ['executable_code'], returning concatenated data result from data parts, check out the non data parts for full response from model.
+2025-09-01 10:20:12 | WARNING  | google_genai.types | text                 | Warning: there are non-text parts in the response: ['executable_code'], returning concatenated text result from text parts, check out the non text parts for full response from model.
+2025-09-01 10:20:17 | WARNING  | google_genai.types | data                 | Warning: there are non-data parts in the response: ['executable_code'], returning concatenated data result from data parts, check out the non data parts for full response from model.
+2025-09-01 10:20:17 | WARNING  | google_genai.types | text                 | Warning: there are non-text parts in the response: ['executable_code'], returning concatenated text result from text parts, check out the non text parts for full response from model.
+2025-09-01 10:20:31 | WARNING  | google_genai.types | data                 | Warning: there are non-data parts in the response: ['executable_code'], returning concatenated data result from data parts, check out the non data parts for full response from model.
+2025-09-01 10:20:31 | WARNING  | google_genai.types | text                 | Warning: there are non-text parts in the response: ['executable_code'], returning concatenated text result from text parts, check out the non text parts for full response from model.
+2025-09-01 10:20:38 | WARNING  | google_genai.types | data                 | Warning: there are non-data parts in the response: ['executable_code'], returning concatenated data result from data parts, check out the non data parts for full response from model.
+2025-09-01 10:20:38 | WARNING  | google_genai.types | text                 | Warning: there are non-text parts in the response: ['executable_code'], returning concatenated text result from text parts, check out the non text parts for full response from model.
+2025-09-01 10:20:40 | WARNING  | google_genai.types | data                 | Warning: there are non-data parts in the response: ['executable_code'], returning concatenated data result from data parts, check out the non data parts for full response from model.
+2025-09-01 10:20:40 | WARNING  | google_genai.types | text                 | Warning: there are non-text parts in the response: ['executable_code'], returning concatenated text result from text parts, check out the non text parts for full response from model.
+2025-09-01 10:21:03 | WARNING  | google_genai.types | data                 | Warning: there are non-data parts in the response: ['executable_code'], returning concatenated data result from data parts, check out the non data parts for full response from model.
+2025-09-01 10:21:03 | WARNING  | google_genai.types | text                 | Warning: there are non-text parts in the response: ['executable_code'], returning concatenated text result from text parts, check out the non text parts for full response from model.
+2025-09-01 10:21:09 | WARNING  | google_genai.types | data                 | Warning: there are non-data parts in the response: ['executable_code'], returning concatenated data result from data parts, check out the non data parts for full response from model.
+2025-09-01 10:21:09 | WARNING  | google_genai.types | text                 | Warning: there are non-text parts in the response: ['executable_code'], returning concatenated text result from text parts, check out the non text parts for full response from model.
+2025-09-01 10:21:19 | WARNING  | google_genai.types | data                 | Warning: there are non-data parts in the response: ['executable_code'], returning concatenated data result from data parts, check out the non data parts for full response from model.
+2025-09-01 10:21:19 | WARNING  | google_genai.types | text                 | Warning: there are non-text parts in the response: ['executable_code'], returning concatenated text result from text parts, check out the non text parts for full response from model.
+2025-09-01 10:21:28 | WARNING  | google_genai.types | data                 | Warning: there are non-data parts in the response: ['executable_code'], returning concatenated data result from data parts, check out the non data parts for full response from model.
+2025-09-01 10:21:28 | WARNING  | google_genai.types | text                 | Warning: there are non-text parts in the response: ['executable_code'], returning concatenated text result from text parts, check out the non text parts for full response from model.
+2025-09-01 10:21:40 | WARNING  | google_genai.types | data                 | Warning: there are non-data parts in the response: ['executable_code'], returning concatenated data result from data parts, check out the non data parts for full response from model.
+2025-09-01 10:21:40 | WARNING  | google_genai.types | text                 | Warning: there are non-text parts in the response: ['executable_code'], returning concatenated text result from text parts, check out the non text parts for full response from model.
+2025-09-01 10:21:51 | INFO     | __main__        | <module>             | Application interrupted by user
